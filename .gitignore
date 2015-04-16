@@ -1,0 +1,4 @@
+test/test.sh
+
+# Intellij ignores
+.idea/workspace.xml
