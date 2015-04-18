@@ -5,5 +5,7 @@
 #       The absolute location of the 'scriptor/bin' directory so all scripts can be properly sourced
 ######
 
-. $1/commands.sh
-. $1/assert.sh
+LOCATION=$1
+
+. $LOCATION/commands.sh
+. $LOCATION/assert.sh
