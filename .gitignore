@@ -1,4 +1,5 @@
 test/test.sh
+github-token.txt
 
 # Intellij ignores
 .idea/workspace.xml

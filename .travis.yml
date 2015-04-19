@@ -4,6 +4,17 @@ before_install:
   - sudo apt-get install -qq bats
 script:
   - bats test
+before_deploy:
+  - mkdir dist
+  - tar czf dist/scryptor.tar.gz bin/
+deploy:
+  provider: releases
+    api_key:
+      - secure: "RGsKZWlA6fsk5alRDxo2nba1sm2XvXcIICdZDXsL3F3144+NsV9voDRfUvJgj9Q7Vbijs+0W2N7R2FNagYCgSSu8q90BZJPRq5nmi9M57CYfJyWKU9O1YX6XxHZePklqgS1DakeLzDBNRNnOdK8zGbdX6UpvlsoMFi2h5ctl27M="
+    file: "dist/scryptor.tar.gz"
+    skip_cleanup: true
+    on:
+      tags: true
 notifications:
   email:
     on_success: never
