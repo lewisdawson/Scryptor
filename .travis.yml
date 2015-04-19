@@ -11,7 +11,7 @@ before_deploy:
 deploy:
   provider: releases
   api_key:
-    secure: "RGsKZWlA6fsk5alRDxo2nba1sm2XvXcIICdZDXsL3F3144+NsV9voDRfUvJgj9Q7Vbijs+0W2N7R2FNagYCgSSu8q90BZJPRq5nmi9M57CYfJyWKU9O1YX6XxHZePklqgS1DakeLzDBNRNnOdK8zGbdX6UpvlsoMFi2h5ctl27M="
+    secure: "QYgPUMOHvtwVJMrtBX8zlwITs7pdVLFvD07N1kQUIfdhN6L76UElH0qJ6Whgq0sF6SBpK3oT1hQ/oj1CGVHHd5Is/I801jArspRfKFngwuy+Re/GObNBruAovqx6ZAIOdPdemFPliMsW9QKqsqmddUgSy4vqnR+OahVgKCdhTok="
   file: "dist/scryptor.tar.gz"
   skip_cleanup: true
   on:
